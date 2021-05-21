@@ -74,15 +74,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello My name is` [Emcee](https://telegra.ph/file/7d87151a7172577be4b0b.jpg) 
+`Hello My name is` [ᎩᏬᎥ](https://telegra.ph/file/5ab044c4382b90fbdc149.jpg) 
 `I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.
-**Powered By** @DaisyXNews.` 
+**Powered By** @logs_yui_bot.` 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD EMCEE TO YOUR GROUP ➕️", url="t.me/Emcee_Bot?startgroup=true"),
+            text="♥️ ADD ᎩᏬᎥ ♥️", url="t.me/Yuigahama_yui_robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
@@ -90,12 +90,12 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💾 SOURCE", url="t.me/DaisyXNews"),
+            text="UPDATES✔️", url="t.me/logs_yui_bot"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/Emcee_Support"),
+            text="🔥 SUPPORT GROUP 🔥", url="https://t.me/chat_support_yui_robot"),
     ],
     [  
-        InlineKeyboardButton(text="🇮🇳 EMCEE DEVS", url="t.me/EmceeDevs"
+        InlineKeyboardButton(text="CHAT GROUP", url="t.me/LEGENDXSENPAI"
     ),
     ], 
 ]
@@ -350,7 +350,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *EMCEE*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *ᎩᏬᎥ*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -358,8 +358,8 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Masha's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://t.me/DaisyXNews).
-                 If you have any question about Emcee, let us know at @Emceesupport.""",
+                 Here is the [💾 UPDATES](https://t.me/logs_yui_bot).
+                 If you have any question about ᎩᏬᎥ, let us know at @chat_support_yui_robot.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -385,8 +385,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Emcee*
-                 \nHere is the [Source Code](https://t.me/DaisyXNews) .""",
+            text=""" Hi..🤗 I'm *ᎩᏬᎥ*
+                 \nHere is the [SUPPORT GROUP](https://t.me/chat_support_yui_robot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
